@@ -1,0 +1,83 @@
+html {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: black;
+
+
+
+
+
+}
+
+
+#Logo {
+    color: white;
+    font-size: 500%;
+    padding: 0;
+
+    
+}
+
+#nav {
+    color: white;
+    float: left;
+    padding-top: 5%;
+
+
+}
+
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   color: white;
+  
+   
+ }
+
+ li {
+    display: inline-block;
+
+ }
+
+
+ #about, #skills, #projects{
+    padding: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+ #contact {
+    background-color: Green;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+ #nav{
+    float: right;
+    overflow: hidden;
+
+ }
+
+ #nav a{
+    text-decoration: none;
+    color: white;
+ }
+
+#nav :hover{
+    background-color: grey;
+ }
+
+#intro {
+    width: 40%;
+    padding-top: 100px;
+}
+
+
+
+ 
+
+
