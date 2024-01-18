@@ -1,9 +1,19 @@
 html {
-    background-color: black;
-    margin-left: 20px;
-    margin-right: 20px;
-
+   margin: 0;
+  
+   
 }
+
+body {
+   margin: 50px;
+   margin-left: 20%;
+   margin-right: 20%;
+ background: rgb(45,50,80); /*THIS IS THE COLOR PALLETE*/
+background: radial-gradient(circle, rgba(45,50,80,1) 0%,
+ rgba(246,177,122,1) 0%, 
+ rgba(112,119,161,1) 100%);
+}
+
 
 h1 {
    margin: 0;
@@ -15,54 +25,92 @@ div{
 }
 
 
-
-#Logo {
-   color: #ffffff;
+.logo {
+   color: #2D3250;
    font-size: 3rem;
    padding: 0;
-   width: fit-content;
-   display: inline-block;
+   text-align: center;
 
 }
 
-#tabs {
-   display: inline-block;
-   float: right;
-   margin-top: 50px;
-
- 
+.header-logo-navigation {
+   display: flex;
+   height: auto;
+   flex-wrap: wrap;
+   justify-content: space-between;
 
 }
-#tabs > li{
-   margin: 10px;
-   display: inline-block;
-   padding:  10px;
-  
+
+
+.header-navigation {
+   display: flex;
+   gap: 100px;
+   flex-wrap: wrap;
+   align-items: center;
+   
 }
 
-.intro {
-   color: #ffffff;
-   clear: both;
-   width: 50%;
+
+.contact {
+   height: 40px;
+   font-size: 25px;
 }
 
- #about:hover, #skills:hover, #projects:hover, #contact:hover{
-   background-color: green
+
+.contact:hover{
+   background-color: #7077A1;
+}
+
+
+
+ .about:hover, .skills:hover, .projects:hover{
+   text-decoration: underline;
  }
 
  #contact {
    font-size: 20px;
  }
 
-
-
-a {
-   color: #ffffff;
-   font-size: 20px;
+a{
+   color: #2D3250;
+   font-size: 25px;
    text-decoration: none;
+   font-weight: bold;
    
+}
+
+li {
+   list-style-type: none;
+}
+
+.intro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #2D3250;
+   font-size: x-large;
+   height: 800px;
+}
+
+.description-title {
+   width: 50%;
 }
 
  
 
 
+@media (max-width: 1000px) {
+   .header-logo-navigation {
+      gap: 20px;
+      flex-direction: column;
+   }
+
+   .header-navigation{
+      flex-direction: column;
+   }
+
+   .intro {
+      height: fit-content;
+   }
+}
