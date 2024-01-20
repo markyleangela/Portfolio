@@ -6,8 +6,8 @@ html {
 
 body {
    margin: 50px;
-   margin-left: 20%;
-   margin-right: 20%;
+   margin-left: 15%;
+   margin-right: 15%;
  background: rgb(45,50,80); /*THIS IS THE COLOR PALLETE*/
 background: radial-gradient(circle, rgba(45,50,80,1) 0%,
  rgba(246,177,122,1) 0%, 
@@ -67,8 +67,11 @@ div{
    text-decoration: underline;
  }
 
- #contact {
+ .contact {
    font-size: 20px;
+   border-radius: 10px;
+   border: 0;
+   
  }
 
 a{
@@ -83,24 +86,31 @@ li {
    list-style-type: none;
 }
 
-.intro {
+.mid-content {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    justify-content: center;
-   color: #2D3250;
-   font-size: x-large;
    height: 800px;
 }
 
+.intro {
+   display: flex;
+   flex-direction: column;
+   color: #2D3250;
+   font-size: x-large;
+   
+   
+}
+
 .description-title {
-   width: 50%;
+   width: 100%;
 }
 
  
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
    .header-logo-navigation {
       gap: 20px;
       flex-direction: column;
@@ -108,9 +118,34 @@ li {
 
    .header-navigation{
       flex-direction: column;
+      gap: 50px;
+      margin-bottom: 50px;
    }
 
-   .intro {
+   .mid-content {
       height: fit-content;
+      flex-direction: column;
    }
+
+   .intro{
+      font-size: medium;
+      text-align: center;
+   }
+
+   .woman-img {
+      width: 300px;
+   }
+
+   .logo {
+      font-size: 2rem;
+   }
+
+   a {
+      font-size: large;
+   }
+
+   .contact {
+      font-size: 15px;
+   }
+
 }
