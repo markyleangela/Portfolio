@@ -1,1 +1,3 @@
 # Portfolio
+
+A simple website using HTML and native CSS
